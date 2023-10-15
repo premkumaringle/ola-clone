@@ -78,22 +78,22 @@ time_picker_edit.each(function (index) {
     let value = rideTypeSelect.val();
     switch (value) {
       case "1":
-        rideType.attr("src", "/images/ic_auto@2x.png");
+        rideType.attr("src", "./images/ic_auto@2x.png");
         rideName.text("Auto");
         rideDes.text("Maxima Xwide");
         break;
       case "2":
-        rideType.attr("src", "/images/ic_mini@2x.png");
+        rideType.attr("src", "./images/ic_mini@2x.png");
         rideName.text("Mini");
         rideDes.text("Maruthi Suzuki Swift")
         break;
       case "3":
-        rideType.attr("src", "/images/ic_prime@2x.png");
+        rideType.attr("src", "./images/ic_prime@2x.png");
         rideName.text("Prime Sedan");
         rideDes.text("Maruti Dzire")
         break;
       case "4":
-        rideType.attr("src", "/images/ic_suv@2x.png");
+        rideType.attr("src", "./images/ic_suv@2x.png");
         rideName.text("Prime SUV");
         rideDes.text("Maruti Ertiga")
         break;
