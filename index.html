@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ola</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <div class="book_ride_body">
+        <div class="book_ride_container">
+            <div class="d-flex align-items-center p-2">
+                <div class="p-2 flex-shrink-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-arrow-left" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z" />
+                    </svg>
+                </div>
+                <div class="p-2 w-100 d-flex justify-content-center">
+                    <p class="text-uppercase m-0 text_edit" id="CNR_No_Text">CRN7621373906</p>
+                    <input type="text" class="form-control hide text-center text_editor" required>
+                </div>
+            </div>
+            <div class="container_body">
+                <div class="headerCard">
+                    <p class="text-center m-0" id="date_time"> Tue, Aug 22, 09:36 PM </p>
+                    <input class="w-100 hide" type="datetime-local" id="date_time_picker" name="date_time">
+                </div>
+
+                <div class="headerCard">
+                    <div class="d-flex align-items-center ">
+                        <div class="p-2 flex-shrink-1 popOver">
+                            <img id="ride_type" src="/images/ic_auto@2x.png" alt="" srcset="">
+
+                            <select class="form-select hide" id="ride_type_select" size="4" aria-label="">
+                                <option selected value="1">auto</option>
+                                <option value="2">mini</option>
+                                <option value="3">prime</option>
+                                <option value="4">suv</option>
+                            </select>
+
+                        </div>
+                        <div class="w-100 ps-2">
+                            <p class="f-md m-0" id="ride_name">Auto</p>
+                            <p class="f-sm m-0" id="ride_des">Maxima Xwide</p>
+                        </div>
+                    </div>
+                    <hr class="m-0">
+                    <div class="d-flex align-items-center">
+                        <div class="p-2 flex-shrink-1 popOver">
+                            <img src="/images/driver_placeholder@2x.png" class="rounded-circle" alt="driver"
+                                width="40px" height="40px">
+                        </div>
+                        <div class="w-100 ps-2">
+                            <p class="fw-bold text-uppercase f-md text_edit">Yash Gunjal</p>
+                            <input type="text" class="form-control hide text_editor"  required>
+                        </div>
+                    </div>
+                    <hr class="m-0">
+                    <div class="d-flex align-items-center">
+                        <div class="p-2 flex-shrink-1 speed">
+                            <img src="/images/speed.svg" alt="driver" width="30px" height="38px">
+                        </div>
+                        <div class="w-100 ps-2 d-flex">
+                            <p class="text-uppercase fw-semibold f-md">₹ <span class="text_edit">392</span></p>
+                            <input type="text" class="form-control hide text-center text_editor"  required>
+                        </div>
+                    </div>
+                    <hr class="m-0">
+                    <div class="d-flex align-items-center">
+                        <div class="p-2 flex-shrink-2 popOver">
+                            <span class="text-uppercase fw-semibold f-xs text-nowrap time_picker" id="pick_time">09:36 PM</span>
+                            <input type="time" class="time_picker_edit hide">
+                        </div>
+                        <div class="w-100 ps-2 d-flex">
+                            <div class="dot dot-green"></div>
+                            <span class="address wrap text-capitalize text_edit">Hadapsargaon, Aru Nagar, Bhosale Nagar, Hadapsar,
+                                Pune, Maharashtra 411028, India</span>
+                            <input type="text" class="form-control hide text_editor" required>
+
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <div class="p-2 flex-shrink-2 popOver">
+                            <span class="text-uppercase fw-semibold f-xs text-nowrap time_picker" id="drop_time">10:36 PM</span>
+                            <input type="time" class="time_picker_edit hide">
+                        </div>
+                        <div class="w-100 ps-2 d-flex">
+                            <div class="dot dot-red"></div>
+                            <span class="address wrap text-capitalize text_edit">FWGW+FH4, Shiv Nagar, Hadapsar, Pune</span>
+                            <input type="text" class="form-control hide text_editor"  required>
+                        
+                        </div>
+                    </div>
+                </div>
+                <div class="headerCard">
+                    <p class="fw-bolder f-sm text-uppercase pt-2 m-0 mb-1" style="color: #6d6d6d;">
+                        Bill Details
+                    </p>
+                    <div class="d-flex justify-content-between">
+                        <p class="m-0 f-sl text-nowrap">Ride Fare</p>
+                        <p class="m-0 f-sl">₹ <span class="text_edit">398.92</span></p>
+                        <input type="text" class="form-control hide text_editor" required>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <p class="m-0 f-sl text-nowrap">Total Access Fee</p>
+                        <p class="m-0 f-sl">₹ <span class="text_edit">14.44</span></p>
+                        <input type="text" class="form-control hide text_editor" required>
+                    </div>
+                    <hr class="m-0">
+                    <div class="d-flex justify-content-between">
+                        <p class="m-0 f-sl text-nowrap">Coupon Savings</p>
+                        <p class="m-0 f-sl">₹ <span class="text_edit">30</span></p>
+                        <input type="text" class="form-control hide text_editor" required>
+                    </div>
+                    <div class="d-flex justify-content-between">
+
+                        <p class="m-0 f-sl text-nowrap">Rounded Off</p>
+                        <p class="m-0 f-sl">₹ <span class="text_edit">0.64</span></p>
+                        <input type="text" class="form-control hide text_editor" required>
+
+                    </div>
+
+                    <hr class="m-0">
+                    <div class="d-flex justify-content-between fw-bolder">
+
+                        <p class="m-0 f-sl text-nowrap">Total Bill</p>
+                        <p class="m-0 f-sl">₹ <span class="text_edit">384</span></p>
+                        <input type="text" class="form-control hide text_editor" required>
+
+                    </div>
+                    <p class="m-0 f-xs text_edit">Includes ₹19 Taxes</p>
+                    <input type="text" class="form-control hide text_editor" required>
+
+                    <div class="d-flex justify-content-between">
+
+                        <p class="m-0 f-sl text-nowrap">Health Pack</p>
+                        <p class="m-0 f-sl">₹ <span class="text_edit">8</span></p>
+                        <input type="text" class="form-control hide text_editor" required>
+
+                    </div>
+                    <hr class="m-0">
+                    <p class="fw-bolder f-sm text-uppercase pt-2 m-0 mb-1" style="color: #6d6d6d;">Payment</p>
+                    <div class="d-flex justify-content-between fw-bolder">
+                        <p class="m-0 f-sl text-nowrap">Total Payable</p>
+                        <p class="m-0 f-sl">₹ <span class="text_edit">392</span></p>
+                        <input type="text" class="form-control hide text_editor" required>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="/index.js"></script>
+</body>
+
+</html>

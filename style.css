@@ -1,0 +1,129 @@
+
+.book_ride_container{
+    width: 550px;
+
+    margin: auto;
+    background-color: #f5f5f5;
+}
+
+#CNR_No_Text{
+    font-size: 18px;
+}
+#date_time{
+    height: 32px;
+    font-size: 15px;
+    line-height: 16px;
+    padding: 8px 0;
+}
+
+.headerCard{
+    position: relative;
+    padding: 0px 8px;
+    border: 1px solid #e5e5e5;
+    margin: 8px 0px;
+    border-radius: 4px;
+    background-color: #fff;
+}
+
+.container_body{
+    padding: 0px 8px;
+}
+
+#ride_type{
+   width: 38px;
+
+}
+#ride_type_select{
+    position: absolute;
+    top: 40px;
+    left: 0px;
+    width: 100px;
+    z-index: 10;
+    /* overflow: hidden; */
+}
+
+.f-xs{
+    font-size: 10px;
+    color: #898989;
+}
+.f-sm{
+    font-size: 12px;
+}
+.f-sl{
+    font-size: 14px;
+    padding: 8px 0;
+}
+.f-md{
+    font-size: 15px;
+}
+.popOver{
+position: relative;
+}
+.speed{
+    margin: 0 6px;
+}
+
+.dot {
+    display: inline-block;
+    height: 6px;
+    width: 6px;
+    border-radius: 50%;
+    vertical-align: top;
+    margin: 12px 0 0;
+}
+.dot-red{
+    background-color: red;
+}
+.dot-green{
+    background-color: green;
+}
+
+.address {
+    width: 90%;
+    line-height: 18px;
+    font-size: 13px;
+    padding-top: 5px;
+    padding-left: 5px;
+}
+.wrap {
+    display: inline-block;
+    word-wrap: normal;
+    white-space: normal;
+}
+
+
+.hide{
+    display: none;
+}
+
+::-webkit-scrollbar-track {
+    border: 5px solid white;
+  
+    background-color: #ffffff;
+  }
+  
+  ::-webkit-scrollbar {
+    width: 17px;
+    background-color: #ffffff;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #357cc4;
+    border-radius: 10px;
+    border: solid white 5px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #2c5d8b;
+  }
+  
+  ::-webkit-scrollbar-button {
+    color: #357cc4;
+    background-color: #2c5d8b;
+    border: solid white 5px;
+    border-radius: 10px;
+  }
+  ::-webkit-scrollbar-button:hover {
+    border: solid white 2px;
+  }
+  
